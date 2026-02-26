@@ -26,6 +26,7 @@ Deployment	Netlify (Continuous Integration)
 
 To run this project locally:
 
+<<<<<<< HEAD
 # Clone the repository
 git clone https://github.com/Venumadhav-18/Travelnext.git
 
@@ -84,3 +85,39 @@ Successful CI/CD deployment on Netlify
 
 Venu madhav reddy
 B.Tech CSE, KL University
+=======
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## TravelNest — Level-5 Upgrade Notes
+
+This workspace has been extended with a Level-5 quality scaffold that includes:
+
+- A small design system in `src/styles.css` with colors, shadows, responsive grid and micro-interactions.
+- Reusable components in `src/components` (Navbar, Footer, Input, Spinner, ProtectedRoute).
+- `AuthContext` and `BookingContext` in `src/context` for authentication and bookings CRUD persisted to `localStorage`.
+- Custom hooks: `useLocalStorage`, `useFetch` in `src/hooks`.
+- API wrapper `src/api/api.js` that reads `src/data/cities.js` and persists bookings to `localStorage`.
+- React Router v6 lazy-loaded routes and a 404 page. Protected routes redirect to `/login`.
+
+Run locally:
+
+```cmd
+npm install
+npm run dev
+```
+
+Recommended Git branching strategy (Level-5):
+
+- `main` : production-ready
+- `feature/ui` : design updates and components
+- `feature/auth` : authentication flows
+- `feature/crud` : bookings CRUD and contexts
+- `feature/api` : API wrapper & integration
+
+Commit message examples:
+
+- feat(ui): add responsive layout and design tokens
+- feat(auth): add AuthContext and login/register pages
+- feat(bookings): implement create/update/delete bookings (localStorage)
+
+>>>>>>> 4a250bd (Updated project files)
